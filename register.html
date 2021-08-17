@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronger工房</title>
+    <style>
+        @import url("css/navbar.css");
+        @import url("css/index.css");
+        @import url("css/register.css");
+    </style>
+    <link rel="icon" href="image/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div >
+        <header class="header">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo"><img src="image/logo.png" style="width: 60%;height: auto;"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">查詢教練</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="coach.html" class="nav-link">關於教練</a>
+                    </li>
+                    <li class="nav-item">
+
+                        <a href="online_index.html" class="nav-link">線上訓練</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="nav-link">線上課程 <span style="font-size: 10px;">▼</span></a>
+                            <div class="dropdown-content">
+                                <a href="beginner.html">初階</a>
+                                <a href="intermediate.html">中階</a>
+                                <a href="professional.html">高階</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">登入</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <img src="image/2.jpg" width="100%">
+        </section>
+    </div>
+
+    <main>
+        <div class="loginBox">
+            <h2>註冊</h2>
+    
+            <form>
+                <p>姓名</p>
+                <input type="text" name="fname" placeholder="姓名">
+                <p>ID</p>
+                <input type="text" name="lname" placeholder="ID">
+                <p>出生日</p>
+                <input type="date" >
+                <p>E-mail</p>
+                <input type="email" name="email" placeholder="E-mail">
+                <p>密碼
+                <p>
+                    <input type="Password" name="pword1" placeholder="密碼">
+                <p>重新輸入密碼</p>
+                <input type="password" name="pword2" Placeholder="重新輸入密碼">
+
+                <a href="login.html"><input type="Submit" name="sbmt" Value="提交"></a>
+    
+                <p>已有賬號? <a href="register.html">登入</a></p>
+            </form>
+        </div>
+    </main>
+
+</body>
+<script src="js/navbar.js"></script>
+
+</html>

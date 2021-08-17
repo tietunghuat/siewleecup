@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+*{
+     margin: 0;
+  padding: 0;
+  
+}
+body
+{
+    background-size: cover;
+    background-color:#090909;
+   
+}
+section
+{
+ content:'';
+ position:fixed;
+ background-position: center center;
+ background-repeat:no-repeat;
+ background-attachment:fixed;
+ -webkit-background-size:cover;
+ background-size:cover;
+ -webkit-filter: blur(10px);
+ z-index: -100000;
+ filter: blur(10px);
+ 
+}
+

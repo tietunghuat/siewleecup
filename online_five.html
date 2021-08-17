@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronger工房</title>
+    <link rel="icon" href="image/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">
+    <style>
+        @import url("css/navbar.css");
+        @import url("css/online.css");
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><img src="image/logo.png" style="width: 60%;height: auto;"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">查詢教練</a>
+                </li>
+                <li class="nav-item">
+                    <a href="coach.html" class="nav-link">關於教練</a>
+                </li>
+                <li class="nav-item">
+
+                    <a href="online_index.html" class="nav-link">線上訓練</a>
+
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="nav-link">線上課程 <span style="font-size: 10px;">▼</span></a>
+                        <div class="dropdown-content">
+                            <a href="beginner.html">初階</a>
+                            <a href="intermediate.html">中階</a>
+                            <a href="professional.html">高階</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link">登入</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="video-one">
+            <span>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupt
+                    i ratione in mollitia eum minima deleniti aut qui eveniet distinctio earum d
+                    ucimus, nihil maiores dolore cumque sequi provi
+                    dent repellendus non praesentium.
+                </p>
+            </span>
+        
+            <video id="video-e" controls="controls">
+                <source type="video/mp4" src="video/coffee_five.mp4">
+            </video>
+        </div>
+
+        <div>
+            <div class="test" id="teste">
+                <h1>Question</h1>
+                <form name="test" id="test">
+                    <div>
+                        <p>(1).How many water hole does it pour out?</p>
+                        <p><input type="radio" name="question1" value="1">A.One</p>
+                        <p><input type="radio" name="question1" value="2">B.Two</p>
+                        <p><input type="radio" name="question1" value="3">C.Flat</p>
+                        <p><input type="radio" name="question1" value="4">D.None</p>
+                    </div>
+                    <div>
+                        <p>(2).Which kind of latte art does he make?</p>
+                        <p><input type="radio" name="question2" value="1">A.Tulip</p>
+                        <p><input type="radio" name="question2" value="2">B.Rossetta</p>
+                        <p><input type="radio" name="question2" value="3">C.Swam</p>
+                        <p><input type="radio" name="question2" value="4">D.Leaf</p>
+                    </div>
+                    <input type="button" name="" value="Submit" onclick="check()" class="btn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/video_five.js">
+    </script>
+</body>
+
+</html>

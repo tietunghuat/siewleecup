@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+  padding: 0;
+  
+}
+body
+{
+       margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background-color: black;
+    
+}
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 background-color:#000000;
+	 padding: 0;
+	 margin: 0;
+     font-family: 'cwTeXYen', sans-serif;
+	 font-weight: 300;
+	 font-size: 13px;
+	 text-transform: uppercase;
+	 color: #000;
+}
+ header {
+	 background-color: #fff;
+	 padding: 0;
+	 margin: 0;
+}
+ .section {
+	 text-align: center;
+	 position: absolute;
+	 width: 100%;
+	 height: 100vh;
+	 letter-spacing: 4px;
+	 overflow: hidden;
+	 clip: rect(0, auto, auto, 0);
+	 display: inline-block;
+     vertical-align: top;
+	 
+}
+
+ .section .fixed {
+	 overflow: hidden;
+	 position: fixed;
+	 top: 50%;
+	 left: 50%;
+	 font-size: 20px;
+}
+ .section:nth-child(1) {
+	 background-color: #fff;
+	 color: #000000;
+	 top: 0;
+	 z-index: 1;
+}
+.section .coach h1
+{
+	text-align: left;
+	padding-top: 20%;
+}
+.section .coach p
+{
+	text-align: left;
+	padding-top: 10%;
+}
+ .section:nth-child(1) .fixed {
+	 transform: translate(-50%, -50%);
+}
+ .section:nth-child(2) {
+	 box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+	 background-color: #0F1E4A;
+	 color: #fff;
+	 top: 100vh;
+	 z-index: 2;
+     
+}
+ .section:nth-child(2) .fixed {
+	 transform: translate(-50%, -50%);
+}
+ .section:nth-child(3) {
+	 box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+	 background-color: #00000000;
+	 color: #fff;
+	 top: 200vh;
+	 z-index: 3;
+    
+}
+ .section:nth-child(3) .fixed {
+	 transform: translate(-50%, -50%);
+}
+ .section:nth-child(4) {
+	 box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+	 background-color: #000000;
+	 color: #fff;
+	 top: 300vh;
+	 z-index: 4;
+}
+ .section:nth-child(4) .fixed {
+	 transform: translate(-50%, -50%);
+}
+ .section:nth-child(5) {
+	 box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+	 background-color: #000000;
+	 color: #fff;
+	 top: 400vh;
+	 z-index: 5;
+}
+ .section:nth-child(5) .fixed {
+	 transform: translate(-50%, -50%);
+}
+ .section:nth-child(6) {
+	 box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+	 background-color: #000000;
+	 color: #fff;
+	 top: 500vh;
+	 z-index: 6;
+}
+ .section:nth-child(6) .fixed {
+	 transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/* title*/
+@font-face {
+font-family: neon;
+src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+display: flex;
+text-align: center;
+vertical-align: middle;
+align-items: center;
+justify-content: center;
+margin-top: 10%;
+}
+
+.neon {
+font-family: neon;
+color: #FB4264;
+font-size: 6vw;
+line-height: 9vw;
+text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+font-family: neon;
+color: #426DFB;
+font-size: 6vw;
+line-height: 9vw;
+text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+animation: neon 1s ease infinite;
+-moz-animation: neon 1s ease infinite;
+-webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+0%,
+100% {
+text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw
+#806914;
+color: #FED128;
+}
+50% {
+text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw
+#40340A;
+color: #806914;
+}
+}
+
+.flux {
+animation: flux 2s linear infinite;
+-moz-animation: flux 2s linear infinite;
+-webkit-animation: flux 2s linear infinite;
+-o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+0%,
+100% {
+text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw
+#147280;
+color: #28D7FE;
+}
+50% {
+text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw
+#0A3940;
+color: #146C80;
+}
+}
+
+/*button*/
+.button {
+  border-radius: 4px;
+  background-color: rgba(228, 20, 20, 0.719);
+  font-family:DFKai-sb;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  margin: 40px 0 0 0 ;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+	#video{
+		width: 300px;
+		height: 500px;
+	}
+		.test{
+			position: absolute;
+			top: 0;
+			left: 20%;
+			width: 50%;
+			height: 90vh;
+			background-color: #fff;
+			border:2px #000 solid;
+			border-radius: 10px;
+			color:#000;
+			z-index: 99;
+			display: none;
+			
+		}
+	</style>
+</head>
+<body>
+	<video id="video" controls="controls">
+    <source type="video/mp4" src="bak.mp4">
+</video>
+<div class="test" id="testa">
+	<h1>題目</h1>
+	<form name="test" id="testa">
+		<div>
+			<p>(1).引體向上會用到不會用到哪處的力量=?</p>
+			<p><input type="radio" name="question1" value="1" >A.二頭肌</p>
+			<p><input type="radio" name="question1" value="2" >B.三頭肌</p>
+			<p><input type="radio" name="question1" value="3" >C.胸肌</p>
+			<p><input type="radio" name="question1" value="4" >D.核心</p>
+		</div>
+		<div>
+			<p>(2).引體向上會用到不會用到哪處的力量=?</p>
+			<p><input type="radio" name="question2" value="1" >A.二頭肌</p>
+			<p><input type="radio" name="question2" value="2" >B.三頭肌</p>
+			<p><input type="radio" name="question2" value="3" >C.胸肌</p>
+			<p><input type="radio" name="question2" value="4" >D.核心</p>
+		</div>
+			<div>
+			<p>(3).引體向上會用到不會用到哪處的力量=?</p>
+			<p><input type="radio" name="question3" value="1" >A.二頭肌</p>
+			<p><input type="radio" name="question3" value="2" >B.三頭肌</p>
+			<p><input type="radio" name="question3" value="3" >C.胸肌</p>
+			<p><input type="radio" name="question3" value="4" >D.核心</p>
+		</div>
+			
+		
+			
+
+		<input type="button" name="" value="送出答案" onclick="check()" class="btn">
+	</form>
+</div>
+
+	<script>
+    var elevideo = document.getElementById("video");
+    elevideo.addEventListener('ended', function () { //播放中
+       document.getElementById("testa").style.display="block";
+    });
+
+		function check(){
+			var c=0;
+			var q1=document.test.question1.value;
+			var q2=document.test.question1.value;
+			var q3=document.test.question1.value;
+			
+			if (q1=="1"&&q2=="1"&&q3=="1") {
+				var yes = confirm("恭喜全對!可以繼續下一個訓練囉");
+				if (yes==true) {
+					window.location.href='next.html';
+				}
+
+		    } else if(q1!="1"||q2!="1"||q3!="1"){
+				var no =alert("你的答案有誤哦，請在看影片複習");
+ 				window.location.href='sas.html';
+				
+
+			
+			}
+			
+		}
+	</script>
+</body>
+</html>
